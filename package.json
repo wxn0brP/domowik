@@ -1,0 +1,24 @@
+{
+	"name": "@wxn0brp/domowik",
+	"version": "0.0.1",
+	"main": "src/index.ts",
+	"description": "",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/wxn0brP/domowik.git"
+	},
+	"homepage": "https://github.com/wxn0brP/domowik",
+	"author": "wxn0brP",
+	"license": "MIT",
+	"type": "module",
+	"bin": {
+		"domowik": "./src/index.ts"
+	},
+	"scripts": {
+		"start": "bun run src/index.ts"
+	},
+	"devDependencies": {
+		"@types/bun": "*",
+		"typescript": "*"
+	}
+}
