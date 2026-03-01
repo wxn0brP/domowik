@@ -35,6 +35,9 @@ domowik export <pattern>
 
 # Export values in shell format
 domowik export-sh <pattern>
+
+# Remove a key-value pair
+domowik rm <key>
 ```
 
 ## License

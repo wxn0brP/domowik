@@ -88,6 +88,14 @@ switch (cmd) {
         break;
     }
 
+    case "rm": {
+        if (!key) usage("rm <key>");
+        delete store[key];
+        saveStore(store);
+        console.log("OK");
+        break;
+    }
+
     default:
         console.log("Commands:");
         console.log("  set <k> <v>");
@@ -96,4 +104,6 @@ switch (cmd) {
         console.log("  list");
         console.log("  export <pattern>       # dotenv format");
         console.log("  export-sh <pattern>    # shell export format");
+        console.log("  rm <k>");
+        process.exit(1);
 }
